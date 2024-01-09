@@ -1,12 +1,14 @@
-const Card = () => {
+import "../styles/card.css";
+
+const Card = ({ data }) => {
+  console.log(data);
   return (
     <div className="card">
       <div className="card_content">
-        <img src="" alt="" />
-        <p></p>
-        <div>
+        <img src={data.img} alt="" />
+        <p>{data.title}</p>
+        <div className="card_bottom">
           <div>
-            <i class="fa-solid fa-share" style="color: #b5becf;"></i>
             <span>21</span>
           </div>
           <div>
